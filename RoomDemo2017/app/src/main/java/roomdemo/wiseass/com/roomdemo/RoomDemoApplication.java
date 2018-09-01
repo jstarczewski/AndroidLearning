@@ -20,6 +20,7 @@ package roomdemo.wiseass.com.roomdemo;
 
 import android.app.Application;
 
+import dagger.android.DaggerActivity;
 import roomdemo.wiseass.com.roomdemo.dependencyinjection.ApplicationComponent;
 import roomdemo.wiseass.com.roomdemo.dependencyinjection.ApplicationModule;
 import roomdemo.wiseass.com.roomdemo.dependencyinjection.DaggerApplicationComponent;

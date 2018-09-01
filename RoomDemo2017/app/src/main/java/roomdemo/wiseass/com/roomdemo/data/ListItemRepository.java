@@ -33,7 +33,6 @@ public class ListItemRepository {
         this.listItemDao = listItemDao;
     }
 
-
     public LiveData<List<ListItem>> getListOfData(){
         return listItemDao.getListItems();
     }
