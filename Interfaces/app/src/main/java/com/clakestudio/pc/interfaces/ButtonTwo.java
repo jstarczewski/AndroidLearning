@@ -7,7 +7,7 @@ package com.clakestudio.pc.interfaces;
 
 public class ButtonTwo {
 
-
+    private Thread r;
     private OnWidgetClickListener onWidgetClickListener;
 
     //private MainActivityOne mainActivityOne;
@@ -24,7 +24,7 @@ public class ButtonTwo {
     }
 
     /// id generated at runtime
-    public int getViewId() {
-        return 123456;
+    public Thread getViewId() {
+        return r;
     }
 }

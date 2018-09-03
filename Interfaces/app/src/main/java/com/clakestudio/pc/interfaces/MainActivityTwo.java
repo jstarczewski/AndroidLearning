@@ -3,7 +3,7 @@ package com.clakestudio.pc.interfaces;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class MainActivityTwo extends AppCompatActivity implements OnWidgetClickListener {
+public class MainActivityTwo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,12 +17,35 @@ public class MainActivityTwo extends AppCompatActivity implements OnWidgetClickL
 
 
         // button does not care whether it is activity or the interface, this is proper
-        buttonTwo.setOnWidgetClickListener(this);
+      /*  buttonTwo.setOnWidgetClickListener(new OnWidgetClickListener() {
+            @Override
+            public void onClick(int viewId) {
 
+            }
+
+        });*/
+
+      buttonTwo.setOnWidgetClickListener(new OnWidgetClickListener() {
+          @Override
+          public void onClick(Thread r) {
+
+
+
+          }
+      });
+
+
+        /**
+         *
+         *
+         * ImageButton imageButton = new ImageButton();
+         *
+         * imageButton.setOnWidgetClickListener(this); ----> works still
+         * because imagebutton is same as ButtonTwo and does note care whether it is class of framgent where method onClick is implemented
+         *
+         *
+         * */
     }
 
-    @Override
-    public void onClick(int viewId) {
-       // Handle event somehow
-    }
+
 }

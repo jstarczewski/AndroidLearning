@@ -6,6 +6,6 @@ package com.clakestudio.pc.interfaces;
 
 public interface OnWidgetClickListener {
 
-    void onClick(int viewId);
+    void onClick(Thread r);
 
 }
