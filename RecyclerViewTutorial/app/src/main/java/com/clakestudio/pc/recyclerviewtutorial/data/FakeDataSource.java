@@ -10,7 +10,7 @@ import java.util.Random;
  * Created by Jan on 9/3/2018.
  */
 
-public class FakeDataSource {
+public class FakeDataSource implements DataSourceInterface {
 
     private static final int sizeOfCollection = 12;
 
@@ -50,8 +50,15 @@ public class FakeDataSource {
 
         for (int i = 0; i < 12; i++) {
             int randOne = random.nextInt(4);
-            int randTWo = random.nextInt(4);
-            int randThre = random.nextInt(4);
+            int randTwo = random.nextInt(4);
+            int randThree = random.nextInt(4);
+
+            listOfData.add(new ListItem(
+                    datesAndTimes[randOne],
+                    messages[randTwo],
+                    colors[randThree]
+            ));
+
         }
 
         return listOfData;
