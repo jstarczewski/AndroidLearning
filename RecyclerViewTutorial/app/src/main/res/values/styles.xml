@@ -12,7 +12,6 @@
 
     <style name="Text">
         <item name="android:gravity">center_vertical</item>
-        <item name="android:padding">16sp</item>
     </style>
 
     <style name="Text.Primary">
