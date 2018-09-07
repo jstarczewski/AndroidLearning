@@ -18,7 +18,7 @@
 
 package com.wiseassblog.startingpoint.repolist;
 
-import com.wiseassblog.androidresttutorial.viewmodel.RepositoryListItem;
+import com.wiseassblog.startingpoint.viewmodel.RepositoryListItem;
 
 import java.util.List;
 
@@ -31,7 +31,7 @@ import java.util.List;
 
 public interface ViewInterface {
 
-    void setUpAdapterAndView(List<RepositoryListItem> listOfData);
+    void setUpAdapterAndView(List<RepositoryListItem > listOfData);
 
     void showErrorMessage(String error);
 

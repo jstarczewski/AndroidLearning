@@ -1,7 +1,5 @@
 package com.wiseassblog.startingpoint.repolist;
 
-import android.arch.lifecycle.ViewModel;
-import android.view.ViewManager;
 
 import com.wiseassblog.startingpoint.data.RepositoryDataSourceInterface;
 import com.wiseassblog.startingpoint.util.BaseSchedulerProvider;
@@ -71,13 +69,22 @@ public class ListPresenter {
                             }
                         }
                 )
-                // 5 the resulting flowable should be subscribed to with new Subscriber
+                // 5 the resulting Flowable should be subscribed to with new Subscriber
                 .subscribeWith(
                         new DisposableSubscriber<ListViewModel>() {
 
 
                             @Override
                             public void onNext(ListViewModel listViewModel) {
+                                // 7 when we get a uiModel handle it here
+                                if (listViewModel.hasError()) {
+                                    view.showErrorMessage(listViewModel.getErrorMessage());
+                                    view.startMainActivity();
+                                } else if (listViewModel.isLoading()) {
+                                    view.showLoadingIndicator();
+                                } else {
+                                    view.setUpAdapterAndView(listViewModel.getRepoList());
+                                }
 
                             }
 
