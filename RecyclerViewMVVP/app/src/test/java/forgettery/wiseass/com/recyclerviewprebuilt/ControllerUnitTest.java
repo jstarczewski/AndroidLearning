@@ -110,7 +110,7 @@ public class ControllerUnitTest {
 
 
 
-    @Test
+   @Test
     public void onListItemClicked() {
         controller.onListItemClick(TEST_ITEM, testViewRoot);
 
