@@ -6,7 +6,7 @@ import com.squareup.moshi.Json;
  * Created by Jan on 9/7/2018.
  */
 
-public class RepositoryDataModel  {
+public class RepositoryDataModel {
 
 
     // all is static final cuz we do not expect this data to change while application overflow
@@ -43,9 +43,9 @@ public class RepositoryDataModel  {
             this.avatar_url = avatar_url;
         }
 
-        public String getAvatar_url() {
-            return avatar_url;
-        }
     }
 
+    public String getAvatar_url() {
+        return Owner.avatar_url;
+    }
 }

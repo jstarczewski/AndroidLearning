@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3f30298f-9739-478c-bbcc-07864068820c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/data/RepositoryDataSourceImpl.java" afterPath="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/data/RepositoryDataSourceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/repolist/ViewInterface.java" afterPath="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/repolist/ViewInterface.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -80,12 +79,27 @@
       <file leaf-file-name="RepositoryDataSourceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/data/RepositoryDataSourceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+            <state relative-caret-position="753">
+              <caret line="62" column="96" lean-forward="false" selection-start-line="62" selection-start-column="96" selection-end-line="62" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#571#572#0" expanded="true" />
+                <element signature="e#1323#2715#0" expanded="true" />
+                <element signature="e#2714#2715#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepositoryDataModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/datamodel/RepositoryDataModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#717#718#0" expanded="true" />
+                <element signature="e#995#996#0" expanded="true" />
+                <element signature="e#1034#1035#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -3676,7 +3690,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/datamodel/RepositoryDataModel.java" />
         <option value="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/data/UrlManager.java" />
         <option value="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/data/GitHubRestAdapter.java" />
         <option value="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/error/GitHubException.java" />
@@ -3685,6 +3698,7 @@
         <option value="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/data/RepositoryDataSourceInterface.java" />
         <option value="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/repolist/ListPresenter.java" />
         <option value="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/repolist/ViewInterface.java" />
+        <option value="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/datamodel/RepositoryDataModel.java" />
         <option value="$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/data/RepositoryDataSourceImpl.java" />
       </list>
     </option>
@@ -3946,7 +3960,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1536320177053" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1536320927472" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3994,7 +4008,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1536320177053" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1536320927472" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -4177,7 +4191,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1536320177054" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1536320927473" />
       </method>
     </configuration>
     <configuration default="false" name="startingpoint" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -4226,7 +4240,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1536320177054" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1536320927473" />
       </method>
     </configuration>
     <list size="2">
@@ -4352,13 +4366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/datamodel/RepositoryDataModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/data/UrlManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -4370,6 +4377,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="75" lean-forward="false" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4457,6 +4467,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/datamodel/RepositoryDataModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/repolist/ViewInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -4469,12 +4492,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/startingpoint/src/main/java/com/wiseassblog/startingpoint/data/RepositoryDataSourceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        <state relative-caret-position="753">
+          <caret line="62" column="96" lean-forward="false" selection-start-line="62" selection-start-column="96" selection-end-line="62" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#1323#2715#0" expanded="true" />
+            <element signature="e#2714#2715#0" expanded="true" />
           </folding>
         </state>
       </provider>
