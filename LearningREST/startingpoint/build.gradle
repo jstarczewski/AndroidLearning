@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "$rootProject.buildToolsVersion"
+    defaultConfig {
+        applicationId "forgettery.wiseass.com.githubrest"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    flavorDimensions "startingpoint"
+
+    productFlavors {
+        prod {
+            minSdkVersion 21
+            versionNameSuffix '-prod'
+            dimension "startingpoint"
+        }
+        mock {
+            minSdkVersion 21
+            versionNameSuffix '-mock'
+            dimension "startingpoint"
+        }
+    }
+
+    variantFilter { variant ->
+        def names = variant.flavors*.name
+        def typeName = variant.buildType*.name
+        if (names.contains("mock") && typeName.contains("release")) {
+            setIgnore(true)
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    compile "com.android.support:design:$rootProject.supportLibraryVersion"
+    compile "com.android.support.constraint:constraint-layout:$rootProject.constraintLayoutVersion"
+    compile "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroidVersion"
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.rxJavaVersion"
+    compile "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:converter-moshi:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofitVersion"
+    compile "com.squareup.moshi:moshi:$rootProject.moshiVersion"
+    compile "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
+    compile "com.google.dagger:dagger:$rootProject.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
+    compile "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
+    testCompile "com.squareup.okhttp3:mockwebserver:$rootProject.mockWebServerVersion"
+    provided "javax.annotation:jsr250-api:$rootProject.jsr250Version"
+    annotationProcessor "android.arch.lifecycle:compiler:$rootProject.archLifecycleCompilerVersion"
+    compile "android.arch.lifecycle:runtime:$rootProject.archLifecycleVersion"
+    compile "android.arch.lifecycle:extensions:$rootProject.archLifecycleExtensionsVersion"
+    testCompile "org.mockito:mockito-core:$rootProject.mockitoVersion"
+    testCompile "junit:junit:$rootProject.junitVersion"
+    compile project(path: ':app')
+}
